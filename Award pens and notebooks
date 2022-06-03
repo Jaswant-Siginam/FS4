@@ -1,0 +1,49 @@
+/*us the Cossack holds a programming competition, in which n people 
+participate. He decided to award them all with pens and notebooks. 
+It is known that Vus has exactly m pens and k notebooks.
+
+Determine whether the Cossack can reward all participants, giving each 
+of them at least one pen and at least one notebook.
+
+Input
+The first line contains three integers n, m, and k (1<=n,m,k<=100) — 
+the number of participants, the number of pens, and the number of notebooks
+respectively.
+
+Output
+Print "Yes" if it possible to reward all the participants. Otherwise,
+print "No".
+
+Examples
+input
+5 8 6
+output
+Yes
+input
+3 9 3
+output
+Yes
+input
+8 5 20
+output
+No
+Note
+In the first example, there are 5 participants. The Cossack has 8 pens and 6 notebooks. Therefore, he has enough pens and notebooks.
+
+In the second example, there are 3 participants. The Cossack has 9 pens and 3 notebooks. He has more than enough pens but only the minimum needed number of notebooks.
+
+In the third example, there are 8 participants but only 5 pens. Since the Cossack does not have enough pens, the answer is "No".
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int k = sc.nextInt();
+        if(n<=m && n<=k)
+        System.out.println("YES");
+        else
+        System.out.println("NO");
+    }
+}
